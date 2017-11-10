@@ -2,19 +2,22 @@
 markdown:         redcarpet
 highlighter:      pygments
 
+plugins:
+  - jekyll-gist
+
 # Permalinks
 permalink:        pretty
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            Helen Zhou
+tagline:          'MEng Student'
+description:      'Hi! My name is Helen, and I am an M.Eng. student in MIT EECS and part of the Clinical Machine Learning Group at CSAIL/IMES. I am working with Prof. David Sontag on '
+url:              http://helen-zhou.com
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Helen Zhou'
+  url:            https://github.com/hlzhou
 
 paginate:         5
 
@@ -22,4 +25,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/hlzhou/hlzhou.github.io

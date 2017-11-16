@@ -2,7 +2,7 @@
 layout: default
 modal-id: 6
 date: 2017-11-16
-img: research/abx.png
+img: research/abx.jpg
 alt: image-alt
 project-date: Sept 2017 - Current
 client: Start Bootstrap

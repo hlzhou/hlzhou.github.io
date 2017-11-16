@@ -1,6 +1,6 @@
 ---
 layout: default
-modal-id: 6
+modal-id: 2
 date: 2017-11-16
 img: research/abx.jpg
 alt: image-alt

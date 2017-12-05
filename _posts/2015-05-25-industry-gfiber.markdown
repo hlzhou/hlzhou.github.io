@@ -4,9 +4,8 @@ modal-id: 2
 date: 2017-11-16
 img: industry/gfiber.jpg
 alt: image-alt
-project-date: Sept 2017 - Current
-client: Start Bootstrap
+project-date: May - September 2015
 category: Industry
-description: Yay antibiotic resistance prediction.
+description: This was my first software internship! Over this summer, I created an analytics service and website for Google Fiber wifi monitoring and reporting. I also learned a lot about Google infrastrcture and software development in general.
 
 ---

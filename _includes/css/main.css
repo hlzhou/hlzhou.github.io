@@ -385,6 +385,10 @@ footer .footer-below {
     outline: 0;
 }
 
+.modal-body img {
+    width: 50%;
+}
+
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
@@ -399,6 +403,10 @@ footer .footer-below {
 .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
+}
+
+.portfolio-modal p {
+    text-align: left;
 }
 
 .portfolio-modal .modal-content img {

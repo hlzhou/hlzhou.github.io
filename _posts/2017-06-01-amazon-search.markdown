@@ -1,7 +1,7 @@
 ---
 layout: default
-modal-id: 1
-date: 2014-07-15
+modal-id: 13
+date: 2017-06-01
 img: industry/a9.jpg
 alt: image-alt
 project-date: June - Sept 2017

@@ -1,7 +1,7 @@
 ---
 layout: default
-modal-id: 2
-date: 2017-11-16
+modal-id: 11
+date: 2016-05-30
 img: industry/daydream.jpg
 alt: image-alt
 project-date: May - September 2016

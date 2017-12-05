@@ -1,7 +1,7 @@
 ---
 layout: default
-modal-id: 2
-date: 2017-11-16
+modal-id: 1
+date: 2014-01-03
 img: projects/reuse.jpg
 alt: image-alt
 project-date: Jan 2014

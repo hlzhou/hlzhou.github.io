@@ -1,7 +1,7 @@
 ---
 layout: default
-modal-id: 2
-date: 2017-11-16
+modal-id: 12
+date: 2016-09-04
 img: research/food.jpg
 alt: image-alt
 project-date: Sept 2016 - May 2017

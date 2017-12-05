@@ -1,7 +1,7 @@
 ---
 layout: default
-modal-id: 2
-date: 2017-11-16
+modal-id: 6
+date: 2015-05-25
 img: industry/gfiber.jpg
 alt: image-alt
 project-date: May - September 2015

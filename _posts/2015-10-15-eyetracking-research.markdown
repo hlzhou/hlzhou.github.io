@@ -1,7 +1,7 @@
 ---
 layout: default
-modal-id: 2
-date: 2017-11-16
+modal-id: 8
+date: 2015-10-15
 img: research/eyetrack.jpg
 alt: image-alt
 project-date: Oct 2015 - August 2017

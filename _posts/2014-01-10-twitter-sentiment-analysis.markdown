@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 2
-date: 2017-11-16
+date: 2014-01-10
 img: research/sentiment.jpg
 alt: image-alt
 project-date: Jan - Sept 2014

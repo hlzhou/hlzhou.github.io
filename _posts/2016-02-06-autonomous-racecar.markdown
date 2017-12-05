@@ -1,7 +1,7 @@
 ---
 layout: default
-modal-id: 2
-date: 2017-11-16
+modal-id: 10
+date: 2016-02-06
 img: projects/robot.jpg
 alt: image-alt
 project-date: Feb - May 2016

@@ -1,0 +1,127 @@
+#welcomebanner {
+  height: 92vh;  
+}
+
+/*FOR STICKYHEADER*/
+
+/* Style the header */
+.stickyheader {
+  color: #f1f1f1;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.padded {
+  padding-top: 80px;
+}
+
+.maincolor {
+	background-color: #009688;
+}
+
+.nav-elt {
+	padding: 0px 30px;
+}
+
+/* To keep navbar on top. */
+#notheader {
+  z-index: 1;
+}
+
+/*T o center nav elements. */
+.ul-holder {
+	text-align:center;
+}
+
+.ul-holder ul {
+	display:inline-table;
+}
+
+.ul-holder ul li {
+	display:inline;
+}
+
+/* For scrollspy */
+.active {
+  font-weight: bold;
+  font-size: 20px;
+  color:black;
+  /*color:white;*/
+}
+
+#myface {
+  /*max-width:50%;*/
+  height:100%;
+  vertical-align: bottom;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.salmon {
+  background-color: #ee6e73;
+}
+
+.salmon-text {
+  color: #ee6e73;
+}
+
+body {
+  background-color: #f1f1f1;
+  /*background-color: #b3c9e8;*/
+}
+
+.blue-gray-text {
+  color: #607D8B;
+}
+
+.blue-gray {
+  background-color: #607D8B;
+}
+
+/* Style the buttons */
+
+/* Add a dark grey background color to the active button */
+#filter-buttons .btn:hover, #filter-buttons .active-button {
+  background-color: #666;
+  color: white;
+}
+
+#filter-buttons .btn {
+  /*background-color: #e15e65;*/
+  /*background-color: #F44336;*/
+  background-color: #607D8B;
+}
+
+#filter-buttons .btn.active-card {
+  background-color: #666;
+}
+
+.card.medium {
+  height: 375px;
+}
+
+.card.medium .card-content p a {
+  text-align: bottom;
+}
+
+.proj-card .card.medium .card-action a, .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
+  color: gray;
+}
+
+.proj-card .card.medium .card-action a:hover {
+  color: #e15e65;
+}

@@ -3367,7 +3367,9 @@ nav ul a span.badge {
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
+  /*max-width: 1280px;*/
+  max-width: 1000px;
+  padding: 10px;
   width: 90%;
 }
 
@@ -5207,7 +5209,7 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #64B5F6;
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: .2s ease-out;

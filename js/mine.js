@@ -1,7 +1,7 @@
 // STICKY HEADER 
 
 // When the user scrolls the page, execute myFunction 
-window.onscroll = function() {setSticky()};
+//window.onscroll = function() {setSticky()};
 
 // Get the header
 var header = document.getElementById("headernav");
@@ -11,15 +11,15 @@ var notheader = document.getElementById("notheader")
 var sticky = header.offsetTop;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function setSticky() {
-  if (window.pageYOffset >= sticky) {
-    header.classList.add("sticky");
-    notheader.classList.add("padded")
-  } else {
-    header.classList.remove("sticky");
-    notheader.classList.remove("padded")
-  }
-}
+// function setSticky() {
+//   if (window.pageYOffset >= sticky) {
+//     header.classList.add("sticky");
+//     notheader.classList.add("padded")
+//   } else {
+//     header.classList.remove("sticky");
+//     notheader.classList.remove("padded")
+//   }
+// }
 
 // SCROLL SPY
 

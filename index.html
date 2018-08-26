@@ -9,18 +9,33 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link href="css/mine.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   
+  <nav class="stickyheader sticky maincolor" id="headernav" role="navigation"> 
+    <div class="nav-wrapper">
+      <div class="ul-holder">
+      <ul class="right nav-mobile">
+        <!-- <li><a class="nav-elt" href="#about">ABOUT</a></li> -->
+        <li><a class="nav-elt" href="#projects">Projects</a></li>
+        <li><a class="nav-elt" href="#classes">Classes</a></li>
+        <li><a class="nav-elt" href="#hobbies">Service & Hobbies</a></li>
+        <li><a class="nav-elt" href="#resume">CV</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+<!-- 
   <div id="index-banner" class="parallax-container" id="welcomebanner">
     <div class="section no-pad-bot" id="welcomebanner">
       <div class="container">
         <br>
-        <h1 class="header center teal-text text-lighten-2">Welcome!</h1>
+        <h1 class="header center blue-text text-lighten-2">Welcome!</h1>
         <div class="row">
           <div class="col s0 m0 l1"></div>
-          <h5 class="header col s12 m12 l10 light center">My name is <span class="white-text text-lighten-3" style="font-size: 30px">Helen Zhou</span>, and I'm a Masters of Engineering student at <a href="https://www.csail.mit.edu/" class="teal-text text-lighten-3">MIT CSAIL</a>. I pursue research in machine learning, natural language processing, and their applications to healthcare.</h5>
+          <h5 class="header col s12 m12 l10 light center">My name is <span class="white-text text-lighten-3" style="font-size: 30px">Helen Zhou</span>, and I'm a Masters of Engineering student at <a href="https://www.csail.mit.edu/" class="blue-text text-lighten-3">MIT CSAIL</a>. I pursue research in machine learning, natural language processing, and their applications to healthcare.</h5>
           <div class="col s0 m0 l1"></div>
         </div>
         <br><br>
@@ -29,78 +44,54 @@
     </div>
     <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 1"></div>
   </div>
+ -->
+ <div class="container">
+  <div class="intro padded">
+    <h1>Helen Zhou</h1>
+    <p class="intro-paragraph">hlzhou [at] andrew.cmu.edu</p>
+    <div class="section">
+      <div class="row">
+        <div class="col s6 m7 l8">
+          <!-- <div class="card-panel"> -->
+            <p class="intro-paragraph">I am a first-year Ph.D. student in the <a href="https://www.ml.cmu.edu/" class="blue-text">Machine Learning Department</a> at <a href="https://www.cmu.edu/" class="blue-text">Carnegie Mellon University</a>. I pursue research in machine learning, natural language processing, and their applications to healthcare.</p>
 
-  <!--TODO: use pushpin-->
-  <nav class="stickyheader maincolor" id="headernav" role="navigation"> 
-    <div class="nav-wrapper container">
-      <div class="ul-holder">
-      <ul class="center nav-mobile">
-        <!-- <li><a class="nav-elt" href="#about">ABOUT</a></li> -->
-        <li><a class="nav-elt" href="#projects">PROJECTS</a></li>
-        <li><a class="nav-elt" href="#classes">CLASSES</a></li>
-        <li><a class="nav-elt" href="#hobbies">SERVICE / HOBBIES</a></li>
-        <li><a class="nav-elt" href="#resume">CV / CONTACT</a></li>
-      </ul>
+            <p class="intro-paragraph">Prior to CMU, I completed my masters of engineering (M.Eng.) degree at <a href="http://www.mit.edu/" class="blue-text">MIT</a>, advised by <a href="http://people.csail.mit.edu/dsontag/" class="blue-text">David Sontag</a> in the <a href="http://clinicalml.org/">Clinical Machine Learning Group</a>.</p> 
+
+            <p class="intro-paragraph">In my undergraduate years, I researched at the MIT Media Lab with <a href="http://soroush.mit.edu/" class="blue-text">Soroush Vosoughi</a> and <a href="https://dkroy.media.mit.edu/" class="blue-text">Deb Roy</a> in the <a href="https://www.media.mit.edu/groups/social-machines/overview/">Laboratory for Social Machines</a>, and collaborated with <a href="https://www.media.mit.edu/people/swgreen/overview/" class="blue-text">Scott Greenwald</a> and <a href="https://www.media.mit.edu/people/pattie/overview/">Pattie Maes</a> in the <a href="https://www.media.mit.edu/groups/fluid-interfaces/overview/">Fluid Interfaces Group.</a></p>
+          </div>
+        <!-- </div> -->
+        <div class="col s2 m2 l1"></div>
+        <div class="col s4 m3 l2">
+          <div class="padded-less-less"></div>
+          <img id="intro-face" src="img/face.png" align="right" valign="middle" vspace="3" hspace="3" height="250px" width="200px"/>
+        </div>
+        <div class="col s0 m0 l1"></div>
+      </div>
     </div>
-    </div>
-  </nav>
+    <div class="padded-less-less"></div>
+    <!-- <center><img src="img/squiggle.png" height="auto" width="100px"/></center> -->
+    <hr>
+  </div>
 
   <div id="notheader">
 
-    <!-- ABOUT SECTION -->
-    <!-- <div class="container">
-      <div class="section scrollspy" id="about">
-        <div class="row">
-          <div class="col s0 m2"></div> -->
-          <!-- <div class="col s12 m7">
-            <h2 class="header">Horizontal Card</h2>
-            <div class="card horizontal">
-              <div class="card-image">
-                <img src="https://lorempixel.com/100/190/nature/6">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.</p>
-                </div>
-                <div class="card-action">
-                  <a href="#">This is a link</a>
-                </div>
-              </div>
-            </div>
-          </div>
- -->
-          <!-- div class="col">
-              <div class="card horizontal white">
-                <div class="card-image">
-                <img src="img/face.png" id="myface">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <p class="light">Throughout my four years of undergrad at MIT, I worked in the <a class="teal-text" href="https://www.media.mit.edu/groups/social-machines/overview/">Laboratory for Social Machines</a> on various projects in machine learning and natural language processing in the context of social media. This year, I've begun working with Professor David Sontag in the <a class="teal-text" href="http://clinicalml.org/research.html">Clinical Machine Learning group</a>. The healthcare domain presents fascinating challenges such as how to personalize treatment, synthesize different types (or “modalities”) of signals, interpret complex models, and infer causal relationships. In my graduate studies, I hope to tackle these and other interesting questions that arise in the healthcare context.</p>
-                </div>
-              </div>
-          </div>
-          <div class="col s0 m2"></div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- PROJECTS PARALLAX PICTURE -->
-    <div class="section scrollspy no-pad-top" id="projects">
+    <!-- CLASSES PARALLAX PICTURE -->
+    <!-- <div class="section scrollspy" id="projects">
     <div class="parallax-container valign-wrapper">
       <div class="section no-pad-bot">
         <div class="container">
-          <div class="row center">
-            <h2 class="header col s12 light">Projects</h2>
-          </div>
+            <div class="row center">
+              <h2 class="header col s12 light">Projects</h2>
+            </div>
         </div>
       </div>
       <div class="parallax"><img src="img/background2.jpg" alt="Unsplashed background img 2"></div>
-    </div>
+    </div> -->
 
     <!-- PROJECTS SECTION -->
-    <div class="container">
-      <div class="section">
+    <div class="padded-less-less">
+      <h3 class="section-title">Projects</h3>
+      <div class="section scrollspy" id="projects">
         <!-- <h4 class="center" style="font-size: 40px">Projects</h4> -->
         <br>
         <div class="row">
@@ -115,7 +106,7 @@
         </div>
         <br>
         <div class="row">
-          <div class="col s6 m4 l3 proj-card research-card">
+          <div class="col s6 m4 l4 proj-card research-card">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/portfolio/research/abx.jpg">
@@ -133,7 +124,7 @@
             </div>
           </div>     
 
-          <div class="col s6 m4 l3 proj-card industry-card">
+          <div class="col s6 m4 l4 proj-card industry-card">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/portfolio/industry/a9.jpg">
@@ -151,7 +142,7 @@
             </div>
           </div>
 
-          <div class="col s6 m4 l3 proj-card research-card">
+          <div class="col s6 m4 l4 proj-card research-card">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/portfolio/research/food.jpg">
@@ -169,7 +160,7 @@
             </div>
           </div>
 
-          <div class="col s6 m4 l3 proj-card research-card">
+          <div class="col s6 m4 l4 proj-card research-card">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/portfolio/research/eyetrack.jpg">
@@ -187,7 +178,7 @@
             </div>
           </div>
 
-          <div class="col s6 m4 l3 proj-card industry-card">
+          <div class="col s6 m4 l4 proj-card industry-card">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/portfolio/industry/gdaydream.jpg">
@@ -205,7 +196,7 @@
             </div>
           </div>
 
-          <div class="col s6 m4 l3 proj-card other-card">
+          <div class="col s6 m4 l4 proj-card other-card">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/portfolio/projects/robot.jpg">
@@ -223,7 +214,7 @@
             </div>
           </div>
 
-          <div class="col s6 m4 l3 proj-card industry-card">
+          <div class="col s6 m4 l4 proj-card industry-card">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/portfolio/industry/brainpower.jpg">
@@ -241,7 +232,7 @@
             </div>
           </div>
 
-          <div class="col s6 m4 l3 proj-card other-card">
+          <div class="col s6 m4 l4 proj-card other-card">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/portfolio/projects/moments.jpg">
@@ -259,7 +250,7 @@
             </div>
           </div>
 
-          <div class="col s6 m4 l3 proj-card research-card">
+          <div class="col s6 m4 l4 proj-card research-card">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/portfolio/research/proflink.jpg">
@@ -277,7 +268,7 @@
             </div>
           </div>
 
-          <div class="col s6 m4 l3 proj-card industry-card">
+          <div class="col s6 m4 l4 proj-card industry-card">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/portfolio/industry/gfiber.jpg">
@@ -295,7 +286,7 @@
             </div>
           </div>
 
-          <div class="col s6 m4 l3 proj-card other-card">
+          <div class="col s6 m4 l4 proj-card other-card">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/portfolio/projects/scavengr.jpg">
@@ -313,7 +304,7 @@
             </div>
           </div>
 
-          <div class="col s6 m4 l3 proj-card other-card">
+          <div class="col s6 m4 l4 proj-card other-card">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/portfolio/projects/battlejeweled.jpg">
@@ -331,7 +322,7 @@
             </div>
           </div>
 
-          <div class="col s6 m4 l3 proj-card research-card">
+          <div class="col s6 m4 l4 proj-card research-card">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/portfolio/research/sentiment.jpg">
@@ -349,7 +340,7 @@
             </div>
           </div>
 
-          <div class="col s6 m4 l3 proj-card other-card">
+          <div class="col s6 m4 l4 proj-card other-card">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/portfolio/projects/reuse.jpg">
@@ -366,11 +357,14 @@
 
         </div>
       </div>
+      <hr>
       </div>
+      <!-- <div class="padded-less"></div>
+      <center><img src="img/squiggle.png" height="auto" width="100px"/></center> -->
     </div>
 
     <!-- CLASSES PARALLAX PICTURE -->
-    <div class="section scrollspy" id="classes">
+    <!-- <div class="section scrollspy" id="classes">
     <div class="parallax-container valign-wrapper">
       <div class="section no-pad-bot">
         <div class="container">
@@ -380,11 +374,13 @@
         </div>
       </div>
       <div class="parallax"><img src="img/background3.jpg" alt="Unsplashed background img 3"></div>
-    </div>
+    </div> -->
 
     <!-- CLASSES SECTION -->
-    <div class="container">
-      <div class="section">
+    <div class="padded-less-less">
+      <h3 class="section-title">Classes</h3>
+      <div class="section scrollspy" id="classes">
+      <!-- <div class="section"> -->
 
         <!--   Icon Section   -->
         <div class="row">
@@ -463,7 +459,7 @@
                 <p>Spring 2016
                 </p>
               </li>
-              <li class="collection-item avatar">
+              <!-- <li class="collection-item avatar">
                 <img src="img/l/u.jpg" class="circle">
                 <span class="title">Linear Algebra (18.06)</span>
                 <p>Spring 2015
@@ -480,7 +476,7 @@
                 <span class="title">Mathematics for Computer Science (6.042)</span>
                 <p>Fall 2014
                 </p>
-              </li>
+              </li> -->
             </ul>
             <!-- <div class="card-panel">
               <span class="white-text">I am a very simple card. I am good at containing small bits of information.
@@ -557,11 +553,14 @@
         </div>
 
       </div>
+      <div class="padded-less"></div>
+    <!-- <center><img src="img/squiggle.png" height="auto" width="100px"/></center> -->
+      <hr>
     </div>
-    </div>
+    <!-- </div> -->
 
     <!-- HOBBIES PARALLAX PICTURE -->
-    <div class="section scrollspy" id="hobbies">
+    <!-- <div class="section scrollspy" id="hobbies">
     <div class="parallax-container valign-wrapper">
       <div class="section no-pad-bot">
         <div class="container">
@@ -571,11 +570,13 @@
         </div>
       </div>
       <div class="parallax"><img src="background_longfellow.jpg" alt="Longfellow bridge"></div>
-    </div>
+    </div> -->
 
     <!-- HOBBIES SECTION -->
-    <div class="container">
-      <div class="section">
+    <div class="padded-less-less">
+      <h3 class="section-title">Service / Hobbies</h3>
+      <div class="section scrollspy" id="hobbies">
+        <br>
         <div class="row">
           <div class="col s6 m4 l4">
             <div class="card medium">
@@ -659,29 +660,38 @@
           </div> 
         </div>
       </div>
+      <div class="padded-less"></div>
+      <!-- <center><img src="img/squiggle.png" height="auto" width="100px"/></center> -->
+      <hr>
     </div>
 
 
     <!-- Resume/ Contact PARALLAX PICTURE -->
-    <div class="parallax-container valign-wrapper section scrollspy" id="resume" style="min-height:600px">
+    <!-- <div class="parallax-container valign-wrapper section scrollspy" id="resume" style="min-height:600px">
       <div class="section no-pad-bot">
-        <div class="container">
-          <div class="row center">
-            <h2 class="header col s12 light">Curriculum Vitae</h2>
-            <a href="cv_current.pdf" class="btn btn-large" style="font-size:25px">PDF</a>
-          </div>
+        <div class="row center">
+          <h2 class="header col s12 light">Curriculum Vitae</h2>
+          <a href="cv_current.pdf" class="btn btn-large" style="font-size:25px">PDF</a>
         </div>
       </div>
       <div class="parallax"><img src="img/background4.jpg" alt="Unsplashed background img 3"></div>
+    </div> -->
+    <div class="padded-less-less">
+      <h3 class="section-title">Curriculum Vitae</h3>
+      <div class="section scrollspy" id="resume">
+        <br>
+        <iframe src="helen_zhou_cv_8_1.pdf" width="100%" height="500px"></iframe>
+      </div>
+      <div class="padded-less"></div>
     </div>
 
     <!-- CONTACT ME -->
-    <footer class="page-footer teal">
+    <!-- <footer class="page-footer blue">
       <div class="container">
         <div class="row">
           <div class="col l12 s12">
             <div class="collection-item avatar">
-              <!-- <img src="img/square_face.png" class="circle" style="height: 60px; width: 60px"> -->
+              <img src="img/square_face.png" class="circle" style="height: 60px; width: 60px">
               <p class="grey-text text-lighten-4 center"><img src="img/square_face.png" class="circle" align="right" valign="middle" vspace="3" hspace="3" height="80px" width="80px"/><br>If you're interested in my work, feel free to shoot me message! <br>I'd love to chat. My email is hlzhou [at] mit [dot] edu.</p></br>
             </div>
           </div>
@@ -692,9 +702,9 @@
         Made with with ♥ by Helen Zhou.
         </div>
       </div>
-    </footer>
+    </footer> -->
+    </div>
   </div>
-
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
@@ -702,11 +712,12 @@
   <script src="js/mine.js"></script>
   <script src="js/include.js"></script>
   <script>w3.includeHTML();</script>
-  </body>
+</body>
 
   <!-- Photo Credits -->
   <!-- Computer Photo by Bram Naus on Unsplash -->
   <!-- Code Photo by Taras Shypka on Unsplash -->
   <!-- Night lights Photo by Jan Sanderek on Unsplash -->
   <!-- Papers Photo by Patric Tomasso on Unsplash -->
+  <!-- Background Photo by Cristofer Jeschke on Unsplash-->
 </html>

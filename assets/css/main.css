@@ -124,9 +124,11 @@ hr {
 table td,
 table th {
   font-size: 1rem;
+  color: var(--global-text-color);
 }
 table th {
   font-weight: bold;
+  color: var(--global-text-color);
 }
 
 a,

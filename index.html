@@ -1,707 +1,759 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Helen Zhou</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <link href="css/mine.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-<body>
-  
-  <nav class="stickyheader sticky maincolor" id="headernav" role="navigation"> 
-    <div class="nav-wrapper">
-      <div class="ul-holder">
-      <ul class="right nav-mobile">
-        <!-- <li><a class="nav-elt" href="#about">ABOUT</a></li> -->
-        <li><a class="nav-elt" href="#projects">Projects</a></li>
-        <li><a class="nav-elt" href="#classes">Classes</a></li>
-        <li><a class="nav-elt" href="#hobbies">Service & Hobbies</a></li>
-        <li><a class="nav-elt" href="#resume">CV</a></li>
-      </ul>
-    </div>
-    </div>
-  </nav>
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
 
- <div class="container">
-  <div class="intro padded">
-    <h1>Helen Zhou</h1>
-    <p class="intro-paragraph">hlzhou [at] andrew.cmu.edu</p>
-    <div class="section">
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Helen L. Zhou</title>
+    <meta name="author" content="Helen L. Zhou">
+    <meta name="description" content="Helen Zhou's personal website.
+">
+    <meta name="keywords" content="Helen Zhou, Machine Learning, Healthcare, Time Series">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Bootstrap Table -->
+    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CRoboto+Slab:100,300,400,500,700%7CMaterial+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="/assets/img/hz_prob.png">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="http://localhost:4000/">
+
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav sticky-bottom-footer">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item active">
+                <a class="nav-link" href="/">about<span class="sr-only">(current)</span></a>
+              </li>
+              
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">publications</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/cv/">cv</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      
+        <!-- about.html -->
+      <div class="post">
+        <header class="post-header">
+          <h1 class="post-title">
+           <span class="font-weight-bold">Helen</span> L. Zhou
+          </h1>
+          <p class="desc">hlzhou@andrew.cmu.edu</p>
+        </header>
+
+        <article>
+          <div class="profile float-right">
+
+              <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/prof_pic-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/prof_pic-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/prof_pic-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/prof_pic.jpg" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="prof_pic.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+          </div>
+
+          <div class="clearfix">
+            <p>Hi there! I am a Ph.D. candidate in the <a href="https://www.ml.cmu.edu/" rel="external nofollow noopener" target="_blank">Machine Learning Department</a> at Carnegie Mellon University (CMU), advised by <a href="https://www.zacharylipton.com/" rel="external nofollow noopener" target="_blank">Prof. Zachary Lipton</a>.
+<!-- Previously, I obtained my M.Eng. and Bachelors degrees in computer science and electrical engineering from Massachusetts Institue of Technology (MIT). --></p>
+
+<!-- My research lies at the intersection of machine learning and healthcare.  -->
+
+<p>My research lies at the intersection of machine learning (ML) and healthcare. 
+I am interested in developing <strong>deployment-oriented</strong> ML methods that are <strong>useful</strong>, <strong>reliable</strong>, and can
+<strong>detect</strong> and <strong>adapt</strong> to distribution shifts that occur in healthcare over time. 
+I have developed ML models for several data modalities, including time series, tabular data, images, and text, and am also interested in topics such as knowledge graphs and causality. 
+I care deeply about 
+grounding my work in 
+impactful real-world problems, 
+and 
+have had the privilege of working with clinicians to devise ML solutions for various healthcare applications, including COVID-19 survival modeling and antibiotic risk prediction. 
+<!-- that can learn from data collected over time, and  -->
+<!-- More broadly, my goal is to build intelligent personal assistants for doctors and patients that are widely accessible and trusted. -->
+<!-- 
+I am interested in topics at the intersection of machine learning and healthcare, such as <b>time series, multi-task learning, knowledge graphs, and causality</b>, with the goal of developing <b>personalized, accurate, and reliable</b> models to assist with clinical decision-making.</p> -->
+<!-- I study how we can develop machine learning methods which can adapt to the ever-changing healthcare landscape.  -->
+<!-- 
+Throughout my career I hope to develop methods that will enable us to continually shine new light on parts of healthcare and medicine, such as autism, that are not yet well understood through classical means. --></p>
+
+<!-- I am interested in topics at the intersection of machine learning and healthcare, such as <b>time series, multi-task learning, knowledge graphs, and causality</b>, with the goal of developing <b>personalized, accurate, and reliable</b> models to assist with clinical decision-making.</p> -->
+
+<p>My work is generously supported by the <a href="https://www.pdsoros.org/meet-the-fellows/helen-zhou" rel="external nofollow noopener" target="_blank">Paul and Daisy Soros Fellowship</a> and the NSF Graduate Research Fellowship Program.
+Prior to CMU, I completed my masters of engineering (M.Eng.) degree at the Massachusetts Institute of Technology (MIT), advised by <a href="http://people.csail.mit.edu/dsontag/" rel="external nofollow noopener" target="_blank">Prof. David Sontag</a> 
+<!-- in the [Clinical Machine Learning](http://clinicalml.org/) group. -->
+and working with <a href="https://www.michaelkoberst.com/" rel="external nofollow noopener" target="_blank">Michael Oberst</a> and <a href="https://www.populationmedicine.org/skanjilal" rel="external nofollow noopener" target="_blank">Prof. Sanjat Kanjilal</a> in the <a href="http://clinicalml.org/" rel="external nofollow noopener" target="_blank">Clinical Machine Learning</a> research group. 
+In my undergraduate years at MIT, I researched at the MIT Media Lab with <a href="http://soroush.mit.edu/" rel="external nofollow noopener" target="_blank">Prof. Soroush Vosoughi</a> and <a href="https://dkroy.media.mit.edu/" rel="external nofollow noopener" target="_blank">Prof. Deb Roy</a> in the <a href="https://www.media.mit.edu/groups/social-machines/overview/" rel="external nofollow noopener" target="_blank">Laboratory for Social Machines</a>, and collaborated with <a href="https://www.media.mit.edu/people/swgreen/overview/" rel="external nofollow noopener" target="_blank">Prof. Scott Greenwald</a> and <a href="https://www.media.mit.edu/people/pattie/overview/" rel="external nofollow noopener" target="_blank">Prof. Pattie Maes</a> in the <a href="https://www.media.mit.edu/groups/fluid-interfaces/overview/" rel="external nofollow noopener" target="_blank">Fluid Interfaces Group</a>.</p>
+
+          </div>
+
+          <!-- News -->
+          <h2><a href="/news/" style="color: inherit;">news</a></h2>          <div class="news">
+            <div class="table-responsive" style="max-height: 60vw">
+              <table class="table table-sm table-borderless">
+              
+                <tr>
+                  <th scope="row">May 10, 2023</th>
+                  <td>
+                    Looking forward to serving as an organizer of the <a href="https://ml4health.github.io/2023/" rel="external nofollow noopener" target="_blank">ML4H Symposium</a> again this year! Fun and fulfilling outreach programs are coming your way :)
+
+<!-- top paper award -->
+<!-- MLD TA award -->
+<!-- hosting ML4H stuff? -->
+<!-- fellowships -->
+<!-- masterworks paper -->
+<!-- https://delphi.cmu.edu/blog/2021/01/28/unpacking-the-drop-in-covid-19-case-fatality-rates/ -->
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Apr 25, 2023</th>
+                  <td>
+                    Check out our work on <a href="https://proceedings.mlr.press/v206/zhou23b/zhou23b.pdf" rel="external nofollow noopener" target="_blank">domain adaptation under missingness shift</a> at AISTATS this week!
+
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Apr 4, 2023</th>
+                  <td>
+                    Our work on evaluating ML models on medical datasets was accepted to CHIL! Check out our <a href="assets/pdf/emdot/paper.pdf">paper</a> and <a href="https://github.com/acmi-lab/EvaluationOverTime" rel="external nofollow noopener" target="_blank">python package</a>!
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Nov 7, 2022</th>
+                  <td>
+                    Come listen to our AMIA presentation on learning clinical concepts to assist with severe COVID-19 risk prediction!
+
+<!-- fellowships -->
+<!-- masterworks paper -->
+<!-- https://delphi.cmu.edu/blog/2021/01/28/unpacking-the-drop-in-covid-19-case-fatality-rates/ -->
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Sep 5, 2021</th>
+                  <td>
+                    Honored that our paper on unpacking COVID-19 case fatality rates was among the top 8 student papers at AMIA this year!
+
+<!-- AISTATS, Annals of Surgical Oncology, other papers... -->
+<!-- top paper award -->
+<!-- MLD TA award -->
+<!-- hosting ML4H stuff? -->
+<!-- fellowships -->
+<!-- masterworks paper -->
+<!-- https://delphi.cmu.edu/blog/2021/01/28/unpacking-the-drop-in-covid-19-case-fatality-rates/ -->
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Jun 21, 2021</th>
+                  <td>
+                    Honored to have received an MLD TA award. Teaching is such an important part of our jobs as academics, and it shapes the next generation’s way of thinking.
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Apr 19, 2019</th>
+                  <td>
+                    I also received the NSF GRFP! Grateful for the support that gives me the freedom to do research in machine learning for healthcare.
+
+<!-- fellowships -->
+<!-- masterworks paper -->
+<!-- https://delphi.cmu.edu/blog/2021/01/28/unpacking-the-drop-in-covid-19-case-fatality-rates/ -->
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Apr 12, 2019</th>
+                  <td>
+                    I’ve been named a 2019 Paul and Daisy Soros Fellow! Very humbled and blessed to be part of such an incredible community which highlights the immigrant experience and American dream.
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Apr 12, 2019</th>
+                  <td>
+                    I’ve been named a 2019 Paul and Daisy Soros Fellow! Very humbled and blessed to be part of such an incredible community which highlights the immigrant experience and American dream.
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Jan 15, 2016</th>
+                  <td>
+                    Our work on predicting risk of complications after HIPEC, an abdominal surgical procedure, was accepted to the Annals of Surgical Oncology!
+
+<!-- AISTATS, Annals of Surgical Oncology, other papers... -->
+<!-- top paper award -->
+<!-- MLD TA award -->
+<!-- hosting ML4H stuff? -->
+<!-- fellowships -->
+<!-- masterworks paper -->
+<!-- https://delphi.cmu.edu/blog/2021/01/28/unpacking-the-drop-in-covid-19-case-fatality-rates/ -->
+
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- Latest posts -->
+          
+
+          <!-- Selected papers -->
+          <h2><a href="/publications/" style="color: inherit;">selected publications</a></h2>
+          <div class="publications">
+            <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col s6 m7 l8">
-          <!-- <div class="card-panel"> -->
-            <p class="intro-paragraph">I am a Ph.D. student in the <a href="https://www.ml.cmu.edu/" class="blue-text">Machine Learning Department</a> at CMU</a>, advised by <a href="http://acmilab.org/" class="blue-text">Zachary Lipton</a>. My work is generously supported by the <a href="https://www.pdsoros.org/meet-the-fellows/helen-zhou">Paul and Daisy Soros Fellowship for New Americans (2019-21)</a> and the <a href="https://www.nsfgrfp.org/">NSF Graduate Research Fellowship Program (2019-23)</a>.</p>
+        <div class="col-sm-2 abbr"><abbr class="badge">AISTATS</abbr></div>
 
-            <p class="intro-paragraph">I am interested in topics at the intersection of machine learning and healthcare, such as <b>time series, multi-task learning, knowledge graphs, and causality</b>, with the goal of developing <b>personalized, accurate, and reliable</b> models to assist with clinical decision-making.</p>
+        <!-- Entry bib key -->
+        <div id="zhou2023domain" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Domain Adaptation under Missingness Shift</div>
+        <!-- Author -->
+        <div class="author">
+        
 
-            <p class="intro-paragraph">Prior to CMU, I completed my masters of engineering (M.Eng.) degree at <a href="http://www.mit.edu/" class="blue-text">MIT</a>, advised by <a href="http://people.csail.mit.edu/dsontag/" class="blue-text">David Sontag</a> in the <a href="http://clinicalml.org/">Clinical Machine Learning</a> research group. In my undergraduate years, I researched at the MIT Media Lab with <a href="http://soroush.mit.edu/" class="blue-text">Soroush Vosoughi</a> and <a href="https://dkroy.media.mit.edu/" class="blue-text">Deb Roy</a> in the <a href="https://www.media.mit.edu/groups/social-machines/overview/">Laboratory for Social Machines</a>, and collaborated with <a href="https://www.media.mit.edu/people/swgreen/overview/" class="blue-text">Scott Greenwald</a> and <a href="https://www.media.mit.edu/people/pattie/overview/">Pattie Maes</a> in the <a href="https://www.media.mit.edu/groups/fluid-interfaces/overview/">Fluid Interfaces Group.</a></p>
-          </div>
-        <!-- </div> -->
-        <div class="col s2 m2 l2"></div>
-        <div class="col s4 m3 l2">
-          <div class="padded-less-less"></div>
-          <img id="intro-face" src="img/face.png" align="right" valign="middle" vspace="3" hspace="3" height="250px" width="200px"/>
+        <em>Helen Zhou</em>, Sivaraman Balakrishnan, and Zachary Lipton</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In International Conference on Artificial Intelligence and Statistics</em>, 2023
         </div>
-        <div class="col s0 m0 l1"></div>
-      </div>
-    </div>
-    <div class="padded-less-less"></div>
-    <!-- <center><img src="img/squiggle.png" height="auto" width="100px"/></center> -->
-    <hr>
-  </div>
-
-  <div id="notheader">
-
-    <!-- CLASSES PARALLAX PICTURE -->
-    <!-- <div class="section scrollspy" id="projects">
-    <div class="parallax-container valign-wrapper">
-      <div class="section no-pad-bot">
-        <div class="container">
-            <div class="row center">
-              <h2 class="header col s12 light">Projects</h2>
-            </div>
-        </div>
-      </div>
-      <div class="parallax"><img src="img/background2.jpg" alt="Unsplashed background img 2"></div>
-    </div> -->
-
-    <!-- PROJECTS SECTION -->
-    <div class="padded-less-less">
-      <h3 class="section-title">Projects</h3>
-      <div class="section scrollspy" id="projects">
-        <!-- <h4 class="center" style="font-size: 40px">Projects</h4> -->
-        <br>
-        <div class="row">
-          <div class="col s12 center">
-            <div id="filter-buttons">
-              <button class="btn active-card" onclick="filterSelection('all')">All</button>
-              <button class="btn" onclick="filterSelection('research-card')">Research</button>
-              <button class="btn" onclick="filterSelection('industry-card')">Industry</button>
-              <button class="btn" onclick="filterSelection('other-card')">Other</button>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="row">
-          <div class="col s6 m4 l4 proj-card research-card">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/research/abx.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Predicting Antibiotic Resistance<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>
-                  To assist clinicians in the <a href="https://en.wikipedia.org/wiki/Empiric_therapy">empiric antibiotic treatment</a> setting, we create predictive models for antibiotic resistence. Using these predictions, we employ a clinical decision-making algorithm and compare against rates of inappropriate antibiotic therapy and broad spectrum (2nd line) prescriptions in clinical practice.</p>
-              </div>
-              <div class="card-action">
-                <a href="http://clinicalml.org/data/amr-dataset/">Project Website</a>
-              </div>
-            </div>
-          </div>     
-
-          <div class="col s6 m4 l4 proj-card industry-card">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/industry/a9.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Amazon Search (A9.com)<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>Last summer, I worked within Amazon Product Search, on the Digital Relevance Ranking team. My intern project was to universalize Kindle relevance ranking models.</p>
-              </div>
-              <div class="card-action">
-                <a href="https://a9.com/what-we-do/product-search.html">A9 Product Search</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s6 m4 l4 proj-card research-card">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/research/food.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Understanding Food Networks<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>In my senior year, I started a new project at Professor Deb Roy's Laboratory for Social Machines (LSM). Using Target food data, I analyzed co-occurrences of food purchases.</p>
-              </div>
-              <div class="card-action">
-                <a href="https://www.media.mit.edu/projects/the-foodome-building-a-comprehensive-knowledge-graph-of-food/overview/">The Foodome</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s6 m4 l4 proj-card research-card">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/research/eyetrack.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Eyetracking for Low-Cost VR<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>While advanced VR headset technologies using IR sensors are quite precise, we wanted to see if we could accurately estimate gaze based simply off of an image of the eyeball. Last summer, I gave a talk at the European Conference on Eye Movements (ECEM).</p>
-              </div>
-              <div class="card-action">
-                <a href="http://ecem2017.uni-wuppertal.de/data/ECEM_Booklet.pdf">2017 ECEM Talk</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s6 m4 l4 proj-card industry-card">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/industry/gdaydream.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Google Daydream<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>Working on the Google Cardboard SDK team within Google Daydream, I created an over-the-air firmware update process to allow the Daydream controller to update its firmware from information sent by a Daydream-enabled phone.</p>
-              </div>
-              <div class="card-action">
-                <a href="https://vr.google.com/daydream/">Google Daydream</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s6 m4 l4 proj-card other-card">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/projects/robot.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Autonomous Racecar<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>I really enjoyed 6.141, Robotics Science and Systems. Working with my team, at the end of the semester we raced our robot through the tunnels of MIT.</p>
-              </div>
-              <div class="card-action">
-                <a href="https://www.youtube.com/watch?v=TqRp0-DIV2c">Particle Filtering Video</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s6 m4 l4 proj-card industry-card">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/industry/brainpower.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Google Glass for Autism<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>As a software engineering intern, I worked on gamification of tasks important to individuals with autism, such as maintaining eye contact and understanding emotions. Technologies included OpenCV and Java.</p>
-              </div>
-              <div class="card-action">
-                <a href="http://www.brain-power.com/">Brain Power LLC.</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s6 m4 l4 proj-card other-card">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/projects/moments.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Moments Android App<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>App to save special moments for a rainy day. After winning an honorable mention at Greylock Hackfest 2015, my roommates and I published our app in the app store. (4.5 star rating, 1000-5000 installs)</p>
-              </div>
-              <div class="card-action">
-                <a href="https://play.google.com/store/apps/details?id=moments.moments">Download in the App Store</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s6 m4 l4 proj-card research-card">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/research/proflink.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Linking User Profiles<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>Working in the Laboratory for Social Machines, my postdoctoral mentor Dr. Soroush Vosoughi and I used temporal and linguistic models to link user profiles across different social media platforms. Published in SocInfo'15.</p>
-              </div>
-              <div class="card-action">
-                <a href="https://arxiv.org/abs/1605.05166">SocInfo'15, arXiv</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s6 m4 l4 proj-card industry-card">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/industry/gfiber.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Google Fiber<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>To assist Wi-Fi tests, I created an analytics website to help test engineers quickly evaluate the state of their machines.</p>
-              </div>
-              <div class="card-action">
-                <a href="https://fiber.google.com">Google Fiber</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s6 m4 l4 proj-card other-card">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/projects/scavengr.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Scavengr Android App<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>For our mobile development class 21W.789, we created an Android app that allows users to create and go on scavenger hunts.</p>
-              </div>
-              <div class="card-action">
-                <a href="https://www.youtube.com/watch?v=YamLwF_k-Nw">Demo Video</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s6 m4 l4 proj-card other-card">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/projects/battlejeweled.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">BattleJeweled Android App<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>As part of an iOS game development competition, I worked with a friend to create a 2-player make-3 game (think Bejeweled or Candy Crush). Make combos to send your opponent an unexpected twist!</p>
-              </div>
-              <div class="card-action"> 
-                <a href="https://play.google.com/store/apps/details?id=com.battleJeweled.battleJeweled&hl=fr_CA">App Store Link</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s6 m4 l4 proj-card research-card">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/research/sentiment.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Contextual Sentiment Classification<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>Over my freshman year summer, I explored many classifiers and features to predict the sentiment of tweets. Ultimately, we found that context (time of day, location) proved quite valuable. Published in EMNLP.</p>
-              </div>
-              <div class="card-action">
-                <a href="https://arxiv.org/abs/1605.05195">2015 EMNLP WASSA, arXiv</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s6 m4 l4 proj-card other-card">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/projects/reuse.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">ReUse Website<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>My roommate and I created a trash-to-treasure website, where users could post their unwanted items and others could claim them.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <hr>
-      </div>
-      <!-- <div class="padded-less"></div>
-      <center><img src="img/squiggle.png" height="auto" width="100px"/></center> -->
-    </div>
-
-    <!-- CLASSES PARALLAX PICTURE -->
-    <!-- <div class="section scrollspy" id="classes">
-    <div class="parallax-container valign-wrapper">
-      <div class="section no-pad-bot">
-        <div class="container">
-            <div class="row center">
-              <h2 class="header col s12 light">Classes</h2>
-            </div>
-        </div>
-      </div>
-      <div class="parallax"><img src="img/background3.jpg" alt="Unsplashed background img 3"></div>
-    </div> -->
-
-    <!-- CLASSES SECTION -->
-    <div class="padded-less-less">
-      <h3 class="section-title">Classes</h3>
-      <div class="section scrollspy" id="classes">
-      <!-- <div class="section"> -->
-
-        <!--   Icon Section   -->
-        <div class="row">
-          <div class="col s12 m6">
-            <div class="icon-block">
-              <h2 class="center"><i class="material-icons">school</i></h2>
-              <h5 class="center">Coursework</h5>
-              <p class="light center">(<span class="red-text">G = graduate</span>, <span class="blue-text">H = header/ advanced</span>, <span class="green-text">U = undergraduate</span>)</p>
-            </div>
-            <p class="light">In my undergraduate and M.Eng. career at MIT, I've taken a lot of classes. Below are some of my favorite.</p>
-
-            <ul class="collection light">
-              <li class="collection-item avatar">
-                <img src="img/l/g.jpg" class="circle">
-                <span class="title">Advanced Natural Language Processing (6.864)</span>
-                <p>Fall 2016
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/g.jpg" class="circle">
-                <span class="title">Advances in Computer Vision (6.819)</span>
-                <p>Fall 2015
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/g.jpg" class="circle">
-                <span class="title">Machine Learning (6.867)</span>
-                <p>Fall 2016
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/h.jpg" class="circle">
-                <span class="title">Signals, Systems, and Inference (6.011)</span>
-                <p>Spring 2017
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/g.jpg" class="circle">
-                <span class="title">Biomedical Computing (6.872)</span>
-                <p>Fall 2017
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/h.jpg" class="circle">
-                <span class="title">Robotics Science and Systems I (6.141)</span>
-                <p>Spring 2016
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/h.jpg" class="circle">
-                <span class="title">Design and Analysis of Algorithms (6.046)</span>
-                <p>Fall 2015
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/g.jpg" class="circle">
-                <span class="title">Database Systems (6.830)</span>
-                <p>Fall 2017
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/g.jpg" class="circle">
-                <span class="title">Network and Computer Security (6.857)</span>
-                <p>Spring 2016
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/u.jpg" class="circle">
-                <span class="title">Computer System Engineering (6.033)</span>
-                <p>Spring 2016
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/h.jpg" class="circle">
-                <span class="title">Networks (14.15)</span>
-                <p>Spring 2016
-                </p>
-              </li>
-              <!-- <li class="collection-item avatar">
-                <img src="img/l/u.jpg" class="circle">
-                <span class="title">Linear Algebra (18.06)</span>
-                <p>Spring 2015
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/u.jpg" class="circle">
-                <span class="title">Probability and Random Variables (18.440)</span>
-                <p>Spring 2015
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/u.jpg" class="circle">
-                <span class="title">Mathematics for Computer Science (6.042)</span>
-                <p>Fall 2014
-                </p>
-              </li> -->
-            </ul>
-            <!-- <div class="card-panel">
-              <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-              </span>
-            </div> -->
-          </div>
-
-          <div class="col s12 m6">
-            <div class="icon-block">
-              <h2 class="center"><i class="material-icons">group</i></h2>
-              <h5 class="center">Teaching</h5>
-              <p class="light center">(<span class="pink-text text-darken-4">TA = teaching assistant</span>, <span class="blue-text text-darken-4">LA = lab assistant</span>, <span class="black-text">O = other</span>)</p>
-              <p class="light">Throughout the years, I've also enjoyed serving as a course assistant for many classes.</p>
-            </div>
-            <ul class="collection light">
-              <li class="collection-item avatar">
-                <img src="img/l/ta.jpg" class="circle">
-                <span class="title">Intro to Machine Learning (6.036) TA</span>
-                <p>Fall 2017, Spring 2017
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/ta.jpg" class="circle">
-                <span class="title">Intro to Deep Learning (6.S191) TA</span>
-                <p>IAP (January) 2017
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/o.jpg" class="circle">
-                <span class="title">Intro to EECS II (6.02) Head Grader</span>
-                <p>Fall 2016
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/o.jpg" class="circle">
-                <span class="title">Design and Analysis of Algorithms (6.046) HKN Tutor</span>
-                <p>Spring 2016
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/la.jpg" class="circle">
-                <span class="title">Computation Structures (6.004) LA</span>
-                <p>Fall 2015
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/o.jpg" class="circle">
-                <span class="title">Intro to Algorithms (6.006) HKN Tutor</span>
-                <p>Spring 2015 - Fall 2015
-                </p>
-              </li> 
-              <li class="collection-item avatar">
-                <img src="img/l/o.jpg" class="circle">
-                <span class="title">Mathematics for Computer Science (6.042) HKN Tutor</span>
-                <p>Fall 2014 - Spring 2015
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/la.jpg" class="circle">
-                <span class="title">Intro to EECS I (6.01) LA</span>
-                <p>Fall 2014
-                </p>
-              </li>
-              <li class="collection-item avatar">
-                <img src="img/l/ta.jpg" class="circle">
-                <span class="title">Multivariable Calculus (18.02) TA</span>
-                <p>Fall 2014
-                </p>
-              </li>
-            </ul>
-          </div>
-
+        <div class="periodical">
+          
         </div>
 
-      </div>
-      <div class="padded-less"></div>
-    <!-- <center><img src="img/squiggle.png" height="auto" width="100px"/></center> -->
-      <hr>
-    </div>
-    <!-- </div> -->
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://proceedings.mlr.press/v206/zhou23b.html" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://proceedings.mlr.press/v206/zhou23b/zhou23b.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="/assets/pdf/dams/poster.pdf" class="btn btn-sm z-depth-0" role="button">Poster</a>
+            <a href="/assets/pdf/dams/slides.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          </div>
+          
+          <div class="badges">
+          </div>
 
-    <!-- HOBBIES PARALLAX PICTURE -->
-    <!-- <div class="section scrollspy" id="hobbies">
-    <div class="parallax-container valign-wrapper">
-      <div class="section no-pad-bot">
-        <div class="container">
-            <div class="row center">
-              <h2 class="header col s12 light">Service/ Hobbies</h2>
-            </div>
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>
+    Rates of missing data often depend on record-keeping policies and thus may change across times and locations, even when the underlying features are comparatively stable. In this paper, we introduce the problem of Domain Adaptation under Missingness Shift (DAMS). Here, (labeled) source data and (unlabeled) target data would be exchangeable but for different missing data mechanisms. We show that if missing data indicators are available, DAMS reduces to covariate shift. Addressing cases where such indicators are absent, we establish the following theoretical results for underreporting completely at random: (i) covariate shift is violated (adaptation is required); (ii) the optimal linear source predictor can perform arbitrarily worse on the target domain than always predicting the mean; (iii) the optimal target predictor can be identified, even when the missingness rates themselves are not; and (iv) for linear models, a simple analytic adjustment yields consistent estimates of the optimal target parameters. In experiments on synthetic and semi-synthetic data, we demonstrate the promise of our methods when assumptions hold. Finally, we discuss a rich family of future extensions.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">zhou2023domain</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Domain Adaptation under Missingness Shift}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Zhou, Helen and Balakrishnan, Sivaraman and Lipton, Zachary}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on Artificial Intelligence and Statistics}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{9577--9606}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
         </div>
       </div>
-      <div class="parallax"><img src="background_longfellow.jpg" alt="Longfellow bridge"></div>
-    </div> -->
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">AMIA</abbr></div>
 
-    <!-- HOBBIES SECTION -->
-    <div class="padded-less-less">
-      <h3 class="section-title">Service / Hobbies</h3>
-      <div class="section scrollspy" id="hobbies">
-        <br>
-        <div class="row">
-          <div class="col s6 m4 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/hobbies/hkn.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">HKN Tutoring Program<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>MIT Eta Kappa Nu (HKN) is our EECS honor society/ service organization. As Internal Relations Chair last year, I started our blog and wrote about our service efforts throughout the department. As Tutoring Chair this year, I lead a service with hundreds of tutors and tutees.</p>
-              </div>
-              <div class="card-action">
-                <a href="https://hkn.mit.edu/">MIT HKN Website</a>
-              </div>
-            </div>
-          </div> 
+        <!-- Entry bib key -->
+        <div id="Zhou2022-zn" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Learning Clinical Concepts for Predicting Risk of Progression to
+              Severe COVID-19</div>
+        <!-- Author -->
+        <div class="author">
+        
 
-          <div class="col s6 m4 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/hobbies/conference.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">MIT IEEE Undergraduate Research Conference<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>In junior year, I served as webmaster in the inaugural MIT IEEE Undergraduate Research and Technology Conference. In senior year, I worked with my co-chair to coordinate all aspects of the conference. This year, I serve as an alumni advisor for the new undergraduates in the conference committee.</p>
-              </div>
-              <div class="card-action">
-                <a href="http://ieee.scripts.mit.edu/conference/">MIT URTC Website</a>
-              </div>
-            </div>
-          </div> 
+        <em>Helen Zhou</em>, Cheng Cheng, Kelly J Shields, Gursimran Kochhar, Tariq Cheema, Zachary C Lipton, and Jeremy C Weiss</div>
 
-          <div class="col s6 m4 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/hobbies/marathon.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Running<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>I love long-distance running. It's a refreshing way to start the day, and great time to catch up on podcasts!</p>
-              </div>
-            </div>
-          </div> 
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>AMIA Annual Symposium Proceedings</em>, 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
 
-          <div class="col s6 m4 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/hobbies/climbing.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Rock Climbing<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>Rock climbing is always a blast. Every problem presents a fun puzzle to tackle, and it's a great balance between mind and body.</p>
-              </div>
-            </div>
-          </div> 
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/37128459/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/pmc10148297/pdf/1114.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="/assets/pdf/amia_covid_concepts/slides.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          </div>
+          
+          <div class="badges">
+          </div>
 
-          <div class="col s6 m4 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/portfolio/hobbies/photography.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Photography<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>I think the world is beautiful, and that well over a thousand words are needed to describe it's elegance. As I move forward in life, I hope to continue to capture snapshots of treasured moments that will last a lifetime.</p>
-              </div>
-            </div>
-          </div> 
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>With COVID-19 now pervasive, identification of high-risk
+              individuals is crucial. Using data from a major healthcare
+              provider in Southwestern Pennsylvania, we develop survival models
+              predicting severe COVID-19 progression. In this endeavor, we face
+              a tradeoff between more accurate models relying on many features
+              and less accurate models relying on a few features aligned with
+              clinician intuition. Complicating matters, many EHR features tend
+              to be under-coded degrading the accuracy of smaller models. In
+              this study we develop two sets of high-performance risk scores:
+              (i) an unconstrained model built from all available features; and
+              (ii) a pipeline that learns a small set of clinical concepts
+              before training a risk predictor. Learned concepts boost
+              performance over the corresponding features (C-index 0.858 vs.
+              0.844) and demonstrate improvements over (i) when evaluated
+              out-of-sample (subsequent time periods). Our models outperform
+              previous works (C-index 0.844-0.872 vs. 0.598-0.810).</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Zhou2022-zn</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Learning Clinical Concepts for Predicting Risk of Progression to
+                Severe {COVID-19}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Zhou, Helen and Cheng, Cheng and Shields, Kelly J and Kochhar, Gursimran and Cheema, Tariq and Lipton, Zachary C and Weiss, Jeremy C}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{AMIA Annual Symposium Proceedings}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{1257--1266}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">language</span> <span class="p">=</span> <span class="s">{en}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
         </div>
       </div>
-      <div class="padded-less"></div>
-      <!-- <center><img src="img/squiggle.png" height="auto" width="100px"/></center> -->
-      <hr>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">CHIL</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="zhou2022model" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Model Evaluation in Medical Datasets Over Time</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Helen Zhou*</em>, Yuwen Chen*, and Zachary C Lipton</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Machine Learning for Healthcare (ML4H) Symposium 2022 (Abstract). To be presented at Conference on Health, Inference, and Learning (CHIL)</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="/assets/pdf/emdot/paper.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/emdot/supp.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="/assets/pdf/emdot/poster.pdf" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          </div>
+          
+          <div class="badges">
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>
+Machine learning (ML) models deployed in healthcare systems must face data drawn from continually evolving environments.
+However, researchers proposing such models typically evaluate them in a time-agnostic manner, 
+splitting datasets according to patients sampled randomly throughout the entire study time period. 
+This work proposes the Evaluation on Medical Datasets Over Time (EMDOT) framework, 
+which evaluates the performance of a model class across time. 
+Inspired by the concept of backtesting, EMDOT simulates possible training procedures that 
+practitioners might have been able to execute at each point in time and evaluates the resulting models on all future time points. 
+Evaluating both linear and more complex models on six distinct medical data sources (tabular and imaging), 
+we show how depending on the dataset, using all historical data may be ideal in many cases, 
+whereas using a window of the most recent data could be advantageous in others. 
+In datasets where models suffer from sudden degradations in performance, we investigate plausible explanations for these shocks. 
+We release the EMDOT package to help facilitate further works in deployment-oriented evaluation over time.
+  </p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">AMIA</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="cheng2021unpacking" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Unpacking the Drop in COVID-19 Case Fatality Rates: A Study of National and Florida Line-Level Data</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Helen Zhou*</em>, Cheng Cheng*, Jeremy C Weiss, and Zachary C Lipton</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In AMIA Annual Symposium Proceedings</em>, 2021
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/pmc8861724/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/pmc8861724/pdf/3576511.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="/assets/pdf/amia_cfr/slides.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          </div>
+          
+          <div class="badges">
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>
+    Since the COVID-19 pandemic began, the United States’s case fatality rate (CFR) has plummeted. Using
+national and Florida data, we unpack the drop in CFR between April and December 2020, accounting for such
+confounders as expanded testing, age distribution shift, and detection-to-death lags. Guided by the insight that
+treatment improvements in this period should correspond to decreases in hospitalization fatality rate (HFR), and using a
+block-bootstrapping procedure to quantify uncertainty, we find that although treatment improvements do not follow the
+same trajectory in Florida and nationally (with Florida undergoing a comparatively severe second peak), by December,
+significant improvements are observed both in Florida and nationally (at least 17% and 55% respectively). These
+estimates paint a more realistic picture of improvements than the drop in aggregate CFR (70.8%–91.1%). We publish a
+website where users can apply our analyses to selected demographics, regions, and dates of interest.
+  </p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">cheng2021unpacking</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Unpacking the Drop in COVID-19 Case Fatality Rates: A Study of National and Florida Line-Level Data}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Zhou*, Helen and Cheng*, Cheng and Weiss, Jeremy C and Lipton, Zachary C}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{AMIA Annual Symposium Proceedings}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{285}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">organization</span> <span class="p">=</span> <span class="s">{American Medical Informatics Association}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Science</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="doi:10.1126/scitranslmed.aay5067" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">A decision algorithm to promote outpatient antimicrobial stewardship for uncomplicated urinary tract infection</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Sanjat Kanjilal, Michael Oberst, Sooraj Boominathan, <em>Helen Zhou</em>, David C. Hooper, and David Sontag</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Science Translational Medicine</em>, 2020
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://www.science.org/doi/pdf/10.1126/scitranslmed.aay5067" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/pmc9527766/pdf/nihms-1794932.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+          
+          <div class="badges">
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>
+  Machine learning models for predicting antibiotic resistance could reduce the use of broad-spectrum antibiotics in urinary tract infection. Use of broad-spectrum, second-line antibiotics in treating urinary tract infections (UTIs) is increasing, likely due to the prevalence of antibiotic resistance. Kanjilal et al. applied a machine learning approach calibrated to local hospital electronic health record data to predict the probability of resistance to first- and second-line antibiotic therapies for uncomplicated UTI. The algorithm then recommended the least broad-spectrum antibiotic to which a given isolate was predicted nonresistant. Use of the pipeline reduced both broad-spectrum and ineffective antibiotic prescription for UTI in the patient cohort relative to clinicians, suggesting the clinical potential of the approach. Antibiotic resistance is a major cause of treatment failure and leads to increased use of broad-spectrum agents, which begets further resistance. This vicious cycle is epitomized by uncomplicated urinary tract infection (UTI), which affects one in two women during their life and is associated with increasing antibiotic resistance and high rates of prescription for broad-spectrum second-line agents. To address this, we developed machine learning models to predict antibiotic susceptibility using electronic health record data and built a decision algorithm for recommending the narrowest possible antibiotic to which a specimen is susceptible. When applied to a test cohort of 3629 patients presenting between 2014 and 2016, the algorithm achieved a 67% reduction in the use of second-line antibiotics relative to clinicians. At the same time, it reduced inappropriate antibiotic therapy, defined as the choice of a treatment to which a specimen is resistant, by 18% relative to clinicians. For specimens where clinicians chose a second-line drug but the algorithm chose a first-line drug, 92% (1066 of 1157) of decisions ended up being susceptible to the first-line drug. When clinicians chose an inappropriate first-line drug, the algorithm chose an appropriate first-line drug 47% (183 of 392) of the time. Our machine learning decision algorithm provides antibiotic stewardship for a common infectious syndrome by maximizing reductions in broad-spectrum antibiotic use while maintaining optimal treatment outcomes. Further work is necessary to improve generalizability by training models in more diverse populations.
+</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">doi:10.1126/scitranslmed.aay5067</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Kanjilal, Sanjat and Oberst, Michael and Boominathan, Sooraj and Zhou, Helen and Hooper, David C. and Sontag, David}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{A decision algorithm to promote outpatient antimicrobial stewardship for uncomplicated urinary tract infection}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Science Translational Medicine}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{12}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{568}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{eaay5067}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1126/scitranslmed.aay5067}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://www.science.org/doi/abs/10.1126/scitranslmed.aay5067}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
+          </div>
+
+
+          <!-- Social -->
+            <div class="social">
+              <div class="contact-icons">
+                <a href="mailto:%68%6C%7A%68%6F%75%5B%61%74%5D%61%6E%64%72%65%77.%63%6D%75.%65%64%75" title="email"><i class="fas fa-envelope"></i></a>
+            <a href="https://scholar.google.com/citations?user=BKkK2DoAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://github.com/hlzhou" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hzhou1235" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
+            
+
+              </div>
+
+              <div class="contact-note">
+                Feel free to reach out! I always happy to chat about machine learning for healthcare, research, grad school, or any number of other random things.
+              </div>
+
+            </div>
+        </article>
+
+</div>
+
+      
     </div>
 
-
-    <!-- Resume/ Contact PARALLAX PICTURE -->
-    <!-- <div class="parallax-container valign-wrapper section scrollspy" id="resume" style="min-height:600px">
-      <div class="section no-pad-bot">
-        <div class="row center">
-          <h2 class="header col s12 light">Curriculum Vitae</h2>
-          <a href="cv_current.pdf" class="btn btn-large" style="font-size:25px">PDF</a>
-        </div>
-      </div>
-      <div class="parallax"><img src="img/background4.jpg" alt="Unsplashed background img 3"></div>
-    </div> -->
-    <div class="padded-less-less">
-      <h3 class="section-title">Curriculum Vitae</h3>
-      <div class="section scrollspy" id="resume">
-        <br>
-        <iframe src="helen_cv_5-13-2023.pdf" width="100%" height="500px"></iframe>
-      </div>
-      <div class="padded-less"></div>
-    </div>
-
-    <!-- CONTACT ME -->
-    <!-- <footer class="page-footer blue">
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        <div class="row">
-          <div class="col l12 s12">
-            <div class="collection-item avatar">
-              <img src="img/square_face.png" class="circle" style="height: 60px; width: 60px">
-              <p class="grey-text text-lighten-4 center"><img src="img/square_face.png" class="circle" align="right" valign="middle" vspace="3" hspace="3" height="80px" width="80px"/><br>If you're interested in my work, feel free to shoot me message! <br>I'd love to chat. My email is hlzhou [at] mit [dot] edu.</p></br>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container center">
-        Made with with ♥ by Helen Zhou.
-        </div>
-      </div>
-    </footer> -->
-    </div>
-  </div>
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/mine.js"></script>
-  <script src="js/include.js"></script>
-  <script>w3.includeHTML();</script>
-</body>
+        <!-- &copy; Copyright 2023 Helen L. Zhou.  -->
+        Made with ♥ by Helen Zhou. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
 
-  <!-- Photo Credits -->
-  <!-- Computer Photo by Bram Naus on Unsplash -->
-  <!-- Code Photo by Taras Shypka on Unsplash -->
-  <!-- Night lights Photo by Jan Sanderek on Unsplash -->
-  <!-- Papers Photo by Patric Tomasso on Unsplash -->
-  <!-- Background Photo by Cristofer Jeschke on Unsplash-->
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script>
+
+  <!-- Bootstrap Table -->
+  <script defer src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
+
+  <!-- Load Common JS -->
+  <script src="/assets/js/no_defer.js"></script>
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
+  </body>
 </html>
